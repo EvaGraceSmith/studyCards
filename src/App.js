@@ -3,15 +3,15 @@ import study from './img/study.jpg';
 import './App.css';
 
 function App() {
-  
+  const name= 'Shiloh'
   return (
     <div className="App">
       <header className="App-header">
       <img src={study} className="study" alt="logo" />
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Study Cards
-        </p>
+
+        <h1>
+          {name}'s Study Cards
+        </h1>
         <a
           className="App-link"
           href="https://reactjs.org"
