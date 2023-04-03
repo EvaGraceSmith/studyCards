@@ -1,10 +1,8 @@
 import study from './img/study.jpg';
 import './App.css';
+import Title from './components/Title';
 
 
-const Title = (props) => {
-  return <h1> <i>{props.name}'s </i>Study Cards</h1>
-}
 
 function App() {
   const name= 'Shiloh'
