@@ -1,6 +1,8 @@
 import study from './img/study.jpg';
 import './App.css';
 import Title from './components/Title';
+import Button from './components/Button';
+import Cards from './components/Cards';
 
 
 
@@ -14,7 +16,8 @@ function App() {
         <h1>
           {name}'s Study Cards
         </h1>
-<button onClick={()=>alert('New Study Cards')}>Create new study cards</button>
+        <Button/>
+<Cards/>
       </header>
     </div>
   );
