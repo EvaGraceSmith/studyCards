@@ -1,7 +1,13 @@
-// import {useState, useEffect } from 'react';
+const Button = () => {
 
-export default ()=>{
-    return(
-<button onClick={()=>alert('New Study Cards')}>Create new study cards</button>
-    )
+    const handleClick = () => {
+        console.log('Hello, students!');
+    }
+    return (  
+        <button onClick={handleClick}>Create new study cards</button>
+    );
 }
+ 
+export default Button;
+
+
