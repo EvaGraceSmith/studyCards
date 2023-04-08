@@ -1,7 +1,7 @@
 const Button = () => {
 
-    const handleClick = () => {
-        console.log('Hello, students!');
+    const handleClick = (e) => {
+        console.log('Hello, students!', e);
     }
 
         const handleClickAgain = (name) => {
