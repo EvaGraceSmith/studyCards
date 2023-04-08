@@ -11,7 +11,7 @@ const Button = () => {
     return ( 
         <div className='button'>
         <button onClick={handleClick}>Create new study cards</button>
-        <button onClick={()=>{handleClickAgain('Shiloh')}}>Click me again</button>
+        <button onClick={()=>handleClickAgain('Shiloh')}>Click me again</button>
         
         </div> 
 
