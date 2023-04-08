@@ -4,11 +4,8 @@ const Navbar = () => {
             <h1>Study Cards</h1>
             <div className="links">
                 <a href="/">Home</a>
-                <a href="/create" style={{
-                    color: "white",
-                    backgroundColor: "#f1356d",
-                    borderRadius: "8px"
-                }}>New Card</a>
+                <a href="/create" 
+                >New Card</a>
             </div>
         </nav>
 
