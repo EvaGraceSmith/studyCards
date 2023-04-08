@@ -1,5 +1,5 @@
 import study from './img/study.jpg';
-import './App.css';
+
 import Title from './components/Title';
 import Button from './components/Button';
 import Cards from './components/Cards';
