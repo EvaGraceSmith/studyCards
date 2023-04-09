@@ -13,7 +13,7 @@ const Home = () => {
     ]);
     return ( 
         <div className="home">
-           <Questions studyCards={studyCards}/>
+           <Questions studyCards={studyCards} heading="History Questions"/>
         </div>
      );
 }

@@ -5,6 +5,7 @@ const Questions = (props) => {
     return (
 
     <div className="questions">
+        <h1>{props.heading}</h1>
                             {studyCards.map((studyCard) => (
                 <div className="studyCard-preview" key={studyCard.id}>
                     <h2>{studyCard.subject}</h2>
