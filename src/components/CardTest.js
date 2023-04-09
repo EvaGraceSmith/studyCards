@@ -22,12 +22,12 @@ const CardTest = (props) => {
                             <div className="flip-card-front">
                                 <div className='question'>
 
-                                    <h3>{studyCard.question}</h3>
+                                    <h2>{studyCard.question}</h2>
                                 </div>
                             </div>
                             <div className="flip-card-back">
                                 <div className='textBox'>
-                                    <h3>{studyCard.answer}</h3>
+                                    <h2>{studyCard.answer}</h2>
                                 </div>
                             </div>
                         </div>
