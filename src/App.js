@@ -16,12 +16,9 @@ function App() {
 
       <header className="App-header">
       <img src={study} className="study" alt="logo" />
-<Title name='Shiloh'/>
-        <h1>
-          {name}'s Study Cards
-        </h1>
+
         <Button/>
-<Cards/>
+
 
       </header>
       <Home/>
