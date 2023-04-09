@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import Questions from './Questions';
+
 
 const Home = () => {
 
@@ -11,13 +13,7 @@ const Home = () => {
     ]);
     return ( 
         <div className="home">
-            {studyCards.map((studyCard) => (
-                <div className="studyCard-preview" key={studyCard.id}>
-                    <h2>{studyCard.subject}</h2>
-                    <p>{studyCard.question}</p>
-                    <p>{studyCard.answer}</p>
-                </div>
-            ))}
+           <Questions studyCards={studyCards}/>
         </div>
      );
 }
