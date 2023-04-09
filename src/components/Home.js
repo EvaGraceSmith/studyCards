@@ -30,7 +30,11 @@ const Home = () => {
     return ( 
         <div className="home">
 
-           <CardTest studyCards={studyCards} heading="History Questions"/>
+{/* The code below returns all the cards. Because I want them sorted by subject, I filtered the results */}
+           {/* <CardTest studyCards={studyCards} heading="History Questions"/> */}
+
+           <CardTest studyCards={studyCards.filter((cards) => cards.subject === 'history')} heading="History Questions"/>
+              <CardTest studyCards={studyCards.filter((cards) => cards.subject === 'geometry')} heading="Geometry Questions"/>
 
         </div>
      );
