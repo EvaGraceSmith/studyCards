@@ -1,3 +1,5 @@
+import './Cards.css';
+
 const CardTest = (props) => {
 
     const studyCards = props.studyCards
