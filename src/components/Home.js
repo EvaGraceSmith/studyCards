@@ -16,7 +16,16 @@ const Home = () => {
 {subject: 'history', question: 'Who wrote the Declaration of Independence?', answer: 'Thomas Jefferson', id: 8},
 {subject: 'history', question: 'Which president was assassinated in 1963?', answer: 'John F. Kennedy', id: 9},
 {subject: 'history', question: 'Where did the first Thanksgiving take place?', answer: 'Plymouth, Massachusetts', id: 10},
-
+{subject: 'geometry', question: 'What is the area of a square with a side length of 5?', answer: '25', id: 11},
+{subject: 'geometry', question: 'What is the area of a rectangle with a length of 5 and a width of 10?', answer: '50', id: 12},
+{subject: 'geometry', question: 'What is the area of a triangle with a base of 5 and a height of 10?', answer: '25', id: 13},
+{subject: 'geometry', question: 'What is the area of a circle with a radius of 5?', answer: '78.5', id: 14},
+{subject: 'geometry', question: 'What is the area of a trapezoid with a base of 5, a top base of 10, and a height of 10?', answer: '75', id: 15},
+{subject: 'geometry', question: 'What is the area of a parallelogram with a base of 5 and a height of 10?', answer: '50', id: 16},
+{subject: 'geometry', question: 'What is the area of a rhombus with a base of 5 and a height of 10?', answer: '50', id: 17},
+{subject: 'geometry', question: 'What is the area of a kite with a base of 5 and a height of 10?', answer: '25', id: 18},
+{subject: 'geometry', question: 'What is the area of a sector with a radius of 5 and an angle of 90 degrees?', answer: '78.5', id: 19},
+{subject: 'geometry', question: 'What is the area of a segment with a radius of 5 and an angle of 90 degrees?', answer: '39.25', id: 20},
     ]);
     return ( 
         <div className="home">
