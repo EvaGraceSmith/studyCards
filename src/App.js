@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-      <Home/>
+
       <header className="App-header">
       <img src={study} className="study" alt="logo" />
 <Title name='Shiloh'/>
@@ -23,6 +23,7 @@ function App() {
         <Button/>
 <Cards/>
       </header>
+      <Home/>
     </div>
   );
 }
