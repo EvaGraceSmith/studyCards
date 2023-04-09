@@ -15,6 +15,7 @@ const Home = () => {
     return ( 
         <div className="home">
            <PropTest studyCards={studyCards} heading="History Questions"/>
+           <Questions studyCards={studyCards}/>
         </div>
      );
 }
