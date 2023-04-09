@@ -1,13 +1,16 @@
 import './Cards.css';
 
-const CardTest = (props) => {
+const CardTest = ({studyCards, heading}) => {
 
-    const studyCards = props.studyCards
+// this is the same thing, but written differently.
+// const CardTest = (props) => {
+
+//     const studyCards = props.studyCards
 
     return (
         <div className="questions"
 >
-            <h1>{props.heading}</h1>
+            <h1>{heading}</h1>
             <div
             style={{
                 display: 'grid',
