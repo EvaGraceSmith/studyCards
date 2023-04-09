@@ -17,7 +17,7 @@ const Home = () => {
         <div className="home">
            <PropTest studyCards={studyCards} heading="History Questions"/>
            <Questions studyCards={studyCards}/>
-           <CardTest studyCards={studyCards}/>
+           <CardTest studyCards={studyCards} heading="History Questions"/>
 
         </div>
      );
