@@ -3,9 +3,11 @@ import { useState } from 'react';
 const Button = () => {
 
     const [name, setName]= useState('Shiloh');
+    const [numberOfCards, setNumberOfCards] = useState(10);
 
     const handleClick = () => {
-        setName('Shiloh is creating new study cards');
+        setName('Shiloh is creating new study cards, and');
+        setNumberOfCards(numberOfCards + 10);
   
     }
 
@@ -13,7 +15,7 @@ const Button = () => {
     
     return ( 
         <div className='button'>
-                    <p>{ name }</p>
+                    <p>{ name } needs {numberOfCards} study cards</p>
         <button onClick={handleClick}>Create new study cards</button>
        
 
