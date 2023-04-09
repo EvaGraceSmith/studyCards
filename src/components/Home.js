@@ -27,6 +27,13 @@ const Home = () => {
 {subject: 'geometry', question: 'What is the area of a sector with a radius of 5 and an angle of 90 degrees?', answer: '78.5', id: 19},
 {subject: 'geometry', question: 'What is the area of a segment with a radius of 5 and an angle of 90 degrees?', answer: '39.25', id: 20},
     ]);
+
+const deleteCard = (id) => {
+        const newStudyCards = studyCards.filter((studyCard) => studyCard.id !== id);
+        setStudyCards(newStudyCards);
+    
+}
+
     return ( 
         <div className="home">
 
@@ -34,7 +41,7 @@ const Home = () => {
            {/* <CardTest studyCards={studyCards} heading="History Questions"/> */}
 
            <CardTest studyCards={studyCards.filter((cards) => cards.subject === 'history')} heading="History Questions"/>
-              <CardTest studyCards={studyCards.filter((cards) => cards.subject === 'geometry')} heading="Geometry Questions"/>
+              <CardTest studyCards={studyCards.filter((cards) => cards.subject === 'geometry')} heading="Geometry Questions" deleteCard= {deleteCard}/>
 
         </div>
      );
