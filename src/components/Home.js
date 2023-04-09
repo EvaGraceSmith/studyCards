@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Questions from './Questions';
+import PropTest from './PropTest';
 
 
 const Home = () => {
@@ -13,7 +14,7 @@ const Home = () => {
     ]);
     return ( 
         <div className="home">
-           <Questions studyCards={studyCards} heading="History Questions"/>
+           <PropTest studyCards={studyCards} heading="History Questions"/>
         </div>
      );
 }
