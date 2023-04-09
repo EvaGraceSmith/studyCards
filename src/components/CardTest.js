@@ -1,0 +1,19 @@
+const CardTest = (props) => {
+
+    const studyCards = props.studyCards
+
+    return ( 
+        <div className="questions">
+        <h1>{props.heading}</h1>
+                            {studyCards.map((studyCard) => (
+                <div className="studyCard-preview" key={studyCard.id}>
+
+                    <p>{studyCard.question}</p>
+
+                </div>
+            ))}
+    </div>
+     );
+}
+ 
+export default CardTest;
