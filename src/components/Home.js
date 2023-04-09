@@ -1,7 +1,23 @@
+import { useState } from 'react';
+
 const Home = () => {
+
+    const [studyCards, setStudyCards]= useState([
+{subject: 'history', question: 'Who was the first president of the United States?', answer: 'George Washington', id: 1},
+{subject:'history', question: "What state produces the most wine?", answer: 'California', id: 2},
+{subject:'history', question: "What is the capital of the United States?", answer: 'Washington, D.C.', id: 3},
+{subject: 'history', question: 'Who won the 2016 presidential election?', answer: 'Donald Trump', id: 4},
+
+    ]);
     return ( 
         <div className="home">
-            <h2>Home Page</h2>
+            {studyCards.map((studyCard) => (
+                <div className="studyCard-preview" key={studyCard.id}>
+                    <h2>{studyCard.subject}</h2>
+                    <p>{studyCard.question}</p>
+                    <p>{studyCard.answer}</p>
+                </div>
+            ))}
         </div>
      );
 }
