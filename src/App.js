@@ -22,9 +22,9 @@ function App() {
         </h1>
         <Button/>
 <Cards/>
-<Home/>
-      </header>
 
+      </header>
+      <Home/>
     </div>
   );
 }
