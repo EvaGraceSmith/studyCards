@@ -22,8 +22,9 @@ function App() {
         </h1>
         <Button/>
 <Cards/>
+<Home/>
       </header>
-      <Home/>
+
     </div>
   );
 }
