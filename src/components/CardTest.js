@@ -38,6 +38,7 @@ const CardTest = ({studyCards, heading, deleteCard}) => {
 
                         </div>
                         <button onClick={() => deleteCard(studyCard.id)}>Delete</button>
+                        
                     </div>
 
 
