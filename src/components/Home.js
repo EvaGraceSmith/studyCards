@@ -20,6 +20,8 @@ fetch('http://localhost:8000/studyCards')
 .then((data) => { //this is the data from the server
     // console.log(data);
     setStudyCards(data);
+    setIsLoading(false);
+
 })
     },[]);
 
