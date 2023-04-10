@@ -7,11 +7,7 @@ const Home = () => {
 
     const [studyCards, setStudyCards]= useState(null);
 
-const deleteCard = (id) => {
-        const newStudyCards = studyCards.filter((studyCard) => studyCard.id !== id);
-        setStudyCards(newStudyCards);
-    
-}
+
 
 useEffect(() => {
 fetch('http://localhost:8000/studyCards')
@@ -34,8 +30,9 @@ fetch('http://localhost:8000/studyCards')
 {/* // This is the code that filters the cards by subject */}
 {/* //  in order to access this information once it is in json file, I need to use js.  */}
 {/* this is conditional templating in react */}
+{/* if the information on the left is true, then render the right side.  */}
            {studyCards && <CardTest studyCards={studyCards.filter((cards) => cards.subject === 'history')} heading="History Questions"/>}
-             {studyCards &&  <CardTest studyCards={studyCards.filter((cards) => cards.subject === 'geometry')} heading="Geometry Questions" deleteCard= {deleteCard}/>}
+             {studyCards &&  <CardTest studyCards={studyCards.filter((cards) => cards.subject === 'geometry')} heading="Geometry Questions" />}
 
         </div>
      );

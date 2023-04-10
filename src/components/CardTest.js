@@ -1,6 +1,6 @@
 import './Cards.css';
 //    **************These are props**This is function passed in as a prop*********
-const CardTest = ({studyCards, heading, deleteCard}) => {
+const CardTest = ({studyCards, heading, }) => {
 
 // this is the same thing, but written differently.
 // const CardTest = (props) => {
@@ -37,7 +37,7 @@ const CardTest = ({studyCards, heading, deleteCard}) => {
                             </div>
 
                         </div>
-                        <button onClick={() => deleteCard(studyCard.id)}>Delete</button>
+
                         
                     </div>
 
