@@ -6,6 +6,7 @@ import './Cards.css';
 function Cards() {
     return (
         <>
+        <h1>Create new study cards</h1>
             <div className="flip-card">
                 <div className="flip-card-inner">
                 <div className="flip-card-front">
