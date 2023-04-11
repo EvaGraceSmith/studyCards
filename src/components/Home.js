@@ -1,40 +1,11 @@
-import { useEffect, useState } from 'react';
 
 import CardTest from './CardTest';
+import useFetch from '../useFetch';
 
 
 const Home = () => {
-    // 2. once the data is fetched, store it in a state variable
-    const [studyCards, setStudyCards] = useState(null);
-
-    const [isLoading, setIsLoading] = useState(true);
-    const [error, setError] = useState(null);
-
-
-    //1. fetch the data from the server when the component loads/ first renders
-    useEffect(() => {
-        fetch('http://localhost:8000/studyCards')
-            //this returns a promise
-            .then(res => { //this is the response from the server
-                console.log(res);
-                if(!res.ok){
-                    //if the response is not ok, throw an error (if ->throw -> catch)
-                    throw Error('Could not fetch the data for that resource');
-                }
-                return res.json();//this returns another promise that we can use
-            })
-            .then((data) => { //this is the data from the server
-                setStudyCards(data);
-                setIsLoading(false);
-                setError(null);
-            })
-            .catch((err) => {
-                //here is where we catch the error
-//                 console.log(err.message);
-                setIsLoading(false);
-                setError(err.message);
-            })
-    }, []);
+    //grab the data, but call it studyCards
+const { data: studyCards, isLoading, error } = useFetch('http://localhost:8000/studyCards');
 
     return (
         <div className="home">
