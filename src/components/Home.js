@@ -8,6 +8,7 @@ const Home = () => {
     const [studyCards, setStudyCards] = useState(null);
 
     const [isLoading, setIsLoading] = useState(true);
+    const [error, setError] = useState(null);
 
 
     //1. fetch the data from the server when the component loads/ first renders
@@ -17,6 +18,7 @@ const Home = () => {
             .then(res => { //this is the response from the server
                 console.log(res);
                 if(!res.ok){
+                    //if the response is not ok, throw an error (if ->throw -> catch)
                     throw Error('Could not fetch the data for that resource');
                 }
                 return res.json();//this returns another promise that we can use
@@ -24,15 +26,20 @@ const Home = () => {
             .then((data) => { //this is the data from the server
                 setStudyCards(data);
                 setIsLoading(false);
+                setError(null);
             })
             .catch((err) => {
-                console.log(err.message);
+                //here is where we catch the error
+//                 console.log(err.message);
+                setIsLoading(false);
+                setError(err.message);
             })
     }, []);
 
     return (
         <div className="home">
-
+            {/* this is conditional templating in react */}
+            {error && <div>{error}</div>}
             {isLoading && <div>Loading...</div>}
 
             {/* The code below returns all the cards. Because I want them sorted by subject, I filtered the results */}
