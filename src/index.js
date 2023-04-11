@@ -13,6 +13,7 @@ import Cards from './components/Cards.js';
 import Error from './components/Error.js';
 import Home from './components/Home.js';
 import MyCards from './components/MyCards';
+import CardDetails from './components/CardDetails';
 
 
 
@@ -23,6 +24,7 @@ const router = createBrowserRouter(
       <Route path="/" element={<Home />} />
       <Route path="/createnewstudycards" element={<Cards />} />
       <Route path="/mystudycards" element={<MyCards />} />
+      <Route path="/carddetails/:id" element={<CardDetails />} />
     </Route>
   )
 );
