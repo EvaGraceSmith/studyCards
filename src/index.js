@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { StrictMode } from 'react';
 import './index.css';
 import {
   createBrowserRouter,
@@ -29,8 +30,9 @@ const router = createBrowserRouter(
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  
+  <StrictMode>
     <RouterProvider router={router} />
+    </StrictMode>
 
 );
 
