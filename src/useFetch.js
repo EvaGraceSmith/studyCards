@@ -13,7 +13,7 @@ const useFetch = (url) => {
             fetch(url)
                 //this returns a promise
                 .then(res => { //this is the response from the server
-                    console.log(res);
+
                     if(!res.ok){
                         //if the response is not ok, throw an error (if ->throw -> catch)
                         throw Error('Could not fetch the data for that resource');
