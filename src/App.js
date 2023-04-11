@@ -2,7 +2,7 @@ import study from './img/study.jpg';
 import Button from './components/Button';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
-
+import { Outlet } from "react-router-dom";
 
 
 
@@ -20,6 +20,7 @@ function App() {
         <Button/>
       </header>
       <Home/>
+      <Outlet />
     </div>
   );
 }
