@@ -15,6 +15,10 @@ const Home = () => {
         fetch('http://localhost:8000/studyCards')
             //this returns a promise
             .then(res => { //this is the response from the server
+                console.log(res);
+                if(!res.ok){
+                    throw Error('Could not fetch the data for that resource');
+                }
                 return res.json();//this returns another promise that we can use
             })
             .then((data) => { //this is the data from the server
