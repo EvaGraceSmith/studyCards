@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 const useFetch = (url) => {
     //custom hooks need to start with use
     //this hook will fetch data from the server
-    
+
     // 2. once the data is fetched, store it in a state variable
     const [data, setData] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
@@ -36,8 +36,12 @@ const useFetch = (url) => {
             .catch((err) => {
                 //here is where we catch the error
                 //                 console.log(err.message);
+                if (err.name === 'AbortError') {
+                    console.log('fetch aborted');
+                } else {
                 setIsLoading(false);
                 setError(err.message);
+                }
             })
         //the [] is the dependency array.  If you want to run the useEffect only once, leave it empty.  If you want to run it every time the state changes, put the state variable in the array.  If you want to run it every time the component renders, put the component in the array.
 
