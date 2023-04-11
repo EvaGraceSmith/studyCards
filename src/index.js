@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import {
   createBrowserRouter,
   RouterProvider,
   createRoutesFromElements,
   Route
 } from "react-router-dom";
+import App from './App.js';
 import Cards from './components/Cards.js';
 import Error from './components/Error.js';
 import Home from './components/Home.js';
-import CardTest from './components/CardTest';
+import MyCards from './components/MyCards';
 
 
 
@@ -21,7 +21,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<App />} errorElement={<Error />}>
       <Route path="/" element={<Home />} />
       <Route path="/createnewstudycards" element={<Cards />} />
-      <Route path="/mystudycards" element={<CardTest />} />
+      <Route path="/mystudycards" element={<MyCards />} />
     </Route>
   )
 );
