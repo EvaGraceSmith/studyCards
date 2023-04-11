@@ -3,7 +3,7 @@ import useFetch from '../useFetch';
 
 const MyCards = () => {
 
-    //grab the data, but call it studyCards
+    //grab the data, and now call it studyCards
 const { data: studyCards, isLoading, error } = useFetch('http://localhost:8000/studyCards');
 
 
@@ -13,7 +13,7 @@ const { data: studyCards, isLoading, error } = useFetch('http://localhost:8000/s
         {error && <div>{error}</div>}
         {isLoading && <div>Loading...</div>}
 
-        {/* The code below returns all the cards. Because I want them sorted by subject, I filtered the results */}
+        {/* The code below returns ALL the cards. Because I want them sorted by subject, I filtered the results */}
         {/* <CardTest studyCards={studyCards} heading="History Questions"/> */}
 
         {/* // This is the code that filters the cards by subject */}
