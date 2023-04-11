@@ -11,6 +11,7 @@ import {
 import Cards from './components/Cards.js';
 import Error from './components/Error.js';
 import Home from './components/Home.js';
+import CardTest from './components/CardTest';
 
 
 
@@ -19,7 +20,8 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />} errorElement={<Error />}>
       <Route path="/" element={<Home />} />
-      <Route path="/books" element={<Cards />} />
+      <Route path="/createnewstudycards" element={<Cards />} />
+      <Route path="/mystudycards" element={<CardTest />} />
     </Route>
   )
 );
