@@ -8,10 +8,14 @@ function Cards() {
 const [subject, setSubject] = useState('');
 const [question, setQuestion] = useState('');
 const [answer, setAnswer] = useState('');
+const [isLoading, setIsLoading] = useState('false');
+
+
 
 const handleSubmit = (e) => {
     e.preventDefault();
     const studyCard = {subject, question, answer};
+    setIsLoading(true);
 
     // console.log(studyCard);
     fetch('http://localhost:8000/studyCards', {
@@ -24,6 +28,7 @@ const handleSubmit = (e) => {
         // This is the response that we get back from the server
     }).then(() => {
         console.log('new card added');
+        setIsLoading(false);
     })
 }
 
@@ -53,7 +58,7 @@ const handleSubmit = (e) => {
             value= {answer}
             onChange= {(e)=> setAnswer(e.target.value)}
             />
-            <button>Add a new card</button>
+            {!isLoading && <button>Add a new card</button>}
             <br></br>
             <br></br>
             <button>Submit</button>
