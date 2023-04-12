@@ -11,6 +11,9 @@ const [answer, setAnswer] = useState('');
 
 const handleSubmit = (e) => {
     e.preventDefault();
+    const studyCard = {subject, question, answer};
+    
+    console.log(studyCard);
 }
 
 
