@@ -23,6 +23,7 @@ const { data: studyCards, isLoading, error } = useFetch('http://localhost:8000/s
         {/* 3. once the state has a value, the left side will be true and the right side will be rendered */}
         {studyCards && <CardTest studyCards={studyCards.filter((cards) => cards.subject === 'history')} heading="History Questions" />}
         {studyCards && <CardTest studyCards={studyCards.filter((cards) => cards.subject === 'geometry')} heading="Geometry Questions" />}
+        {studyCards && <CardTest studyCards={studyCards.filter((cards) => cards.subject !== 'history' && cards.subject !=='geometry'    )} heading="Miscellaneous Questions" />}
 
     </div>
      );

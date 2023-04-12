@@ -1,6 +1,7 @@
 import React from 'react';
 import './Cards.css';
 import { useState } from 'react';
+import {useNavigate} from 'react-router-dom';
 
 
 
@@ -9,6 +10,8 @@ const [subject, setSubject] = useState('');
 const [question, setQuestion] = useState('');
 const [answer, setAnswer] = useState('');
 const [isLoading, setIsLoading] = useState(false);
+
+const navigate = useNavigate();
 
 
 
@@ -29,6 +32,7 @@ const handleSubmit = (e) => {
     }).then(() => {
         console.log('new card added');
         setIsLoading(false);
+        navigate(`/mystudycards`);
     })
 }
 
@@ -62,7 +66,9 @@ const handleSubmit = (e) => {
             {isLoading && <button disabled>Adding Card ...</button>}
             <br></br>
             <br></br>
+
             <button>Submit</button>
+
             <p>{subject}</p>
             <p>{question}</p>
             <p>{answer}</p>
