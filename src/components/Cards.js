@@ -9,11 +9,15 @@ const [subject, setSubject] = useState('');
 const [question, setQuestion] = useState('');
 const [answer, setAnswer] = useState('');
 
+const handleSubmit = (e) => {
+    e.preventDefault();
+}
+
 
     return (
         <div className='create'>
         <h1>Create new study cards</h1>
-        <form>
+        <form onSubmit={handleSubmit}>
             <label>Subject</label>
             <input type="text" 
             name="subject" 
