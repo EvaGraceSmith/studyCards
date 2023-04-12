@@ -7,6 +7,7 @@ import { useState } from 'react';
 function Cards() {
 const [subject, setSubject] = useState('');
 const [question, setQuestion] = useState('');
+const [answer, setAnswer] = useState('');
 
 
     return (
@@ -28,13 +29,19 @@ const [question, setQuestion] = useState('');
             onChange= {(e)=> setQuestion(e.target.value)}
             />
             <label>Answer</label>
-            <input type="text" name="answer" required/>
+            <input type="text" 
+            name="answer" 
+            required
+            value= {answer}
+            onChange= {(e)=> setAnswer(e.target.value)}
+            />
             <button>Add a new card</button>
             <br></br>
             <br></br>
             <button>Submit</button>
             <p>{subject}</p>
             <p>{question}</p>
+            <p>{answer}</p>
 
         </form>
             <div className="flip-card">
