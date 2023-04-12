@@ -1,15 +1,21 @@
 import React from 'react';
 import './Cards.css';
+import { useState } from 'react';
 
 
 
 function Cards() {
+const [subject, setSubject] = useState('');
+
     return (
         <div className='create'>
         <h1>Create new study cards</h1>
         <form>
             <label>Subject</label>
-            <input type="text" name="subject" required/>
+            <input type="text" 
+            name="subject" 
+            value= {subject}
+            required/>
             <label>Question</label>
             <input type="text" name="question" required/>
             <label>Answer</label>
