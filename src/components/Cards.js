@@ -8,7 +8,7 @@ function Cards() {
 const [subject, setSubject] = useState('');
 const [question, setQuestion] = useState('');
 const [answer, setAnswer] = useState('');
-const [isLoading, setIsLoading] = useState('false');
+const [isLoading, setIsLoading] = useState(false);
 
 
 
