@@ -14,8 +14,10 @@ const [subject, setSubject] = useState('');
             <label>Subject</label>
             <input type="text" 
             name="subject" 
+            required
             value= {subject}
-            required/>
+            onChange= {(e)=> setSubject(e.target.value)}
+            />
             <label>Question</label>
             <input type="text" name="question" required/>
             <label>Answer</label>
@@ -24,6 +26,7 @@ const [subject, setSubject] = useState('');
             <br></br>
             <br></br>
             <button>Submit</button>
+            <p>{subject}</p>
 
         </form>
             <div className="flip-card">
