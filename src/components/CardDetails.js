@@ -11,7 +11,14 @@ const {data: studyCards, isLoading, error} = useFetch('http://localhost:8000/stu
         <div className="card-details">
             {isLoading && <div>Loading...</div>}
             {error && <div>{ error }</div>}
-            <h2>Card Details - { id }</h2>   
+            {studyCards && (
+                <article>
+                    <h2>{ studyCards.subject }</h2>
+                    <p>Question: { studyCards.question }</p>
+                    <p>Answer: { studyCards.answer }</p>
+                </article>
+            )}
+  
         </div>
      );
 }
