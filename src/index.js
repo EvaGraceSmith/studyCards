@@ -14,6 +14,7 @@ import Error from './components/Error.js';
 import Home from './components/Home.js';
 import MyCards from './components/MyCards';
 import CardDetails from './components/CardDetails';
+import NotFound from './components/NotFound';
 
 
 
@@ -25,6 +26,7 @@ const router = createBrowserRouter(
       <Route path="/createnewstudycards" element={<Cards />} />
       <Route path="/mystudycards" element={<MyCards />} />
       <Route path="/carddetails/:id" element={<CardDetails />} />
+      <Route path="*" element={<NotFound />} />
     </Route>
   )
 );
