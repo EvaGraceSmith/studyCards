@@ -7,6 +7,14 @@ function Cards() {
     return (
         <>
         <h1>Create new study cards</h1>
+        <form>
+            <label>Subject</label>
+            <input type="text" name="subject" />
+            <label>Question</label>
+            <input type="text" name="question" />
+            <label>Answer</label>
+            <input type="text" name="answer" />
+        </form>
             <div className="flip-card">
                 <div className="flip-card-inner">
                 <div className="flip-card-front">
