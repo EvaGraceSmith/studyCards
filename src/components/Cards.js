@@ -5,7 +5,7 @@ import './Cards.css';
 
 function Cards() {
     return (
-        <>
+        <div className='create'>
         <h1>Create new study cards</h1>
         <form>
             <label>Subject</label>
@@ -31,7 +31,7 @@ function Cards() {
             </div>
         </div>
 
-        </>
+        </div>
     )
 }
 
