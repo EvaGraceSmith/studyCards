@@ -59,6 +59,7 @@ const handleSubmit = (e) => {
             onChange= {(e)=> setAnswer(e.target.value)}
             />
             {!isLoading && <button>Add a new card</button>}
+            {isLoading && <button disabled>Adding Card ...</button>}
             <br></br>
             <br></br>
             <button>Submit</button>
