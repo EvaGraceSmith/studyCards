@@ -14,6 +14,11 @@ function Cards() {
             <input type="text" name="question" required/>
             <label>Answer</label>
             <input type="text" name="answer" required/>
+            <button>Add a new card</button>
+            <br></br>
+            <br></br>
+            <button>Submit</button>
+
         </form>
             <div className="flip-card">
                 <div className="flip-card-inner">
