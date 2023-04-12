@@ -23,7 +23,7 @@ const CardTest = ({ studyCards, heading, }) => {
             >
                 {studyCards.map((studyCard) => (
                     <div className="studyCard-preview" key={studyCard.id}>
-                        <Link to={`/studyCard/${studyCard.subject}`}>
+                        <Link to={`/cardDetails/${studyCard.id}`}>
                         <div className="flip-card">
                             <div className="flip-card-inner">
                                 <div className="flip-card-front">
