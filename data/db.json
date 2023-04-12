@@ -1,124 +1,130 @@
 {
-    "studyCards": [
-        {
-            "subject": "history",
-            "question": "Who was the first president of the United States?",
-            "answer": "George Washington",
-            "id": 1
-        },
-        {
-            "subject": "history",
-            "question": "What state produces the most wine?",
-            "answer": "California",
-            "id": 2
-        },
-        {
-            "subject": "history",
-            "question": "What is the capital of the United States?",
-            "answer": "Washington, D.C.",
-            "id": 3
-        },
-        {
-            "subject": "history",
-            "question": "Who won the 2016 presidential election?",
-            "answer": "Donald Trump",
-            "id": 4
-        },
-        {
-            "subject": "history",
-            "question": "What state is the Grand Canyon in?",
-            "answer": "Arizona",
-            "id": 5
-        },
-        {
-            "subject": "history",
-            "question": "When did the United States declare independence from Great Britain?",
-            "answer": "July 4, 1776",
-            "id": 6
-        },
-        {
-            "subject": "history",
-            "question": "Why did the United States declare independence from Great Britain?",
-            "answer": "Because of unfair taxes",
-            "id": 7
-        },
-        {
-            "subject": "history",
-            "question": "Who wrote the Declaration of Independence?",
-            "answer": "Thomas Jefferson",
-            "id": 8
-        },
-        {
-            "subject": "history",
-            "question": "Which president was assassinated in 1963?",
-            "answer": "John F. Kennedy",
-            "id": 9
-        },
-        {
-            "subject": "history",
-            "question": "Where did the first Thanksgiving take place?",
-            "answer": "Plymouth, Massachusetts",
-            "id": 10
-        },
-        {
-            "subject": "geometry",
-            "question": "What is the area of a square with a side length of 5?",
-            "answer": "25",
-            "id": 11
-        },
-        {
-            "subject": "geometry",
-            "question": "What is the area of a rectangle with a length of 5 and a width of 10?",
-            "answer": "50",
-            "id": 12
-        },
-        {
-            "subject": "geometry",
-            "question": "What is the area of a triangle with a base of 5 and a height of 10?",
-            "answer": "25",
-            "id": 13
-        },
-        {
-            "subject": "geometry",
-            "question": "What is the area of a circle with a radius of 5?",
-            "answer": "78.5",
-            "id": 14
-        },
-        {
-            "subject": "geometry",
-            "question": "What is the area of a trapezoid with a base of 5, a top base of 10, and a height of 10?",
-            "answer": "75",
-            "id": 15
-        },
-        {
-            "subject": "geometry",
-            "question": "What is the area of a parallelogram with a base of 5 and a height of 10?",
-            "answer": "50",
-            "id": 16
-        },
-        {
-            "subject": "geometry",
-            "question": "What is the area of a rhombus with a base of 5 and a height of 10?",
-            "answer": "50",
-            "id": 17
-        },
-        {
-            "subject": "geometry",
-            "question": "What is the area of a kite with a base of 5 and a height of 10?",
-            "answer": "25",
-            "id": 18
-        },
-        {
-            "subject": "geometry",
-            "question": "What is the area of a sector with a radius of 5 and an angle of 90 degrees?",
-            "answer": "78.5",
-            "id": 19
-        },
-        {
-            "subject": "geometry",
-            "question": "What is the area of a segment with a radius of 5 and an angle of 90 degrees?",
-            "answer": "39.25",
-            "id": 20
-        }
-    ]
+  "studyCards": [
+    {
+      "subject": "history",
+      "question": "Who was the first president of the United States?",
+      "answer": "George Washington",
+      "id": 1
+    },
+    {
+      "subject": "history",
+      "question": "What state produces the most wine?",
+      "answer": "California",
+      "id": 2
+    },
+    {
+      "subject": "history",
+      "question": "What is the capital of the United States?",
+      "answer": "Washington, D.C.",
+      "id": 3
+    },
+    {
+      "subject": "history",
+      "question": "Who won the 2016 presidential election?",
+      "answer": "Donald Trump",
+      "id": 4
+    },
+    {
+      "subject": "history",
+      "question": "What state is the Grand Canyon in?",
+      "answer": "Arizona",
+      "id": 5
+    },
+    {
+      "subject": "history",
+      "question": "When did the United States declare independence from Great Britain?",
+      "answer": "July 4, 1776",
+      "id": 6
+    },
+    {
+      "subject": "history",
+      "question": "Why did the United States declare independence from Great Britain?",
+      "answer": "Because of unfair taxes",
+      "id": 7
+    },
+    {
+      "subject": "history",
+      "question": "Who wrote the Declaration of Independence?",
+      "answer": "Thomas Jefferson",
+      "id": 8
+    },
+    {
+      "subject": "history",
+      "question": "Which president was assassinated in 1963?",
+      "answer": "John F. Kennedy",
+      "id": 9
+    },
+    {
+      "subject": "history",
+      "question": "Where did the first Thanksgiving take place?",
+      "answer": "Plymouth, Massachusetts",
+      "id": 10
+    },
+    {
+      "subject": "geometry",
+      "question": "What is the area of a square with a side length of 5?",
+      "answer": "25",
+      "id": 11
+    },
+    {
+      "subject": "geometry",
+      "question": "What is the area of a rectangle with a length of 5 and a width of 10?",
+      "answer": "50",
+      "id": 12
+    },
+    {
+      "subject": "geometry",
+      "question": "What is the area of a triangle with a base of 5 and a height of 10?",
+      "answer": "25",
+      "id": 13
+    },
+    {
+      "subject": "geometry",
+      "question": "What is the area of a circle with a radius of 5?",
+      "answer": "78.5",
+      "id": 14
+    },
+    {
+      "subject": "geometry",
+      "question": "What is the area of a trapezoid with a base of 5, a top base of 10, and a height of 10?",
+      "answer": "75",
+      "id": 15
+    },
+    {
+      "subject": "geometry",
+      "question": "What is the area of a parallelogram with a base of 5 and a height of 10?",
+      "answer": "50",
+      "id": 16
+    },
+    {
+      "subject": "geometry",
+      "question": "What is the area of a rhombus with a base of 5 and a height of 10?",
+      "answer": "50",
+      "id": 17
+    },
+    {
+      "subject": "geometry",
+      "question": "What is the area of a kite with a base of 5 and a height of 10?",
+      "answer": "25",
+      "id": 18
+    },
+    {
+      "subject": "geometry",
+      "question": "What is the area of a sector with a radius of 5 and an angle of 90 degrees?",
+      "answer": "78.5",
+      "id": 19
+    },
+    {
+      "subject": "geometry",
+      "question": "What is the area of a segment with a radius of 5 and an angle of 90 degrees?",
+      "answer": "39.25",
+      "id": 20
+    },
+    {
+      "subject": "History",
+      "question": "Who was the 44th President of the United States?",
+      "answer": "Barak Obama",
+      "id": 21
+    }
+  ]
 }

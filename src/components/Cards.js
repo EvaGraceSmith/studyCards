@@ -12,8 +12,19 @@ const [answer, setAnswer] = useState('');
 const handleSubmit = (e) => {
     e.preventDefault();
     const studyCard = {subject, question, answer};
-    
-    console.log(studyCard);
+
+    // console.log(studyCard);
+    fetch('http://localhost:8000/studyCards', {
+        // This is the method that tells the server what to do with the data
+        method: 'POST',
+        // This is the header that tells the server that the data is in JSON format
+        headers: {"Content-Type": "application/json"},
+        // This is the body of the request, which is the data that we want to send to the server
+        body: JSON.stringify(studyCard)
+        // This is the response that we get back from the server
+    }).then(() => {
+        console.log('new card added');
+    })
 }
 
 
