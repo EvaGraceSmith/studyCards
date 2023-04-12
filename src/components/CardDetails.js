@@ -3,10 +3,10 @@ import { useParams } from 'react-router-dom';
 
 const CardDetails = () => {
 
-    const { id } = useParams();
+    const { subject } = useParams();
     return ( 
         <div className="card-details">
-            <h2>Card Details - {id}</h2>   
+            <h2>Card Details - {subject}</h2>   
         </div>
      );
 }

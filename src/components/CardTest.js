@@ -1,4 +1,5 @@
 import './Cards.css';
+import { Link } from "react-router-dom"
 //**************These are props**This is function passed in as a prop*********
 const CardTest = ({ studyCards, heading, }) => {
 
@@ -22,6 +23,7 @@ const CardTest = ({ studyCards, heading, }) => {
             >
                 {studyCards.map((studyCard) => (
                     <div className="studyCard-preview" key={studyCard.id}>
+                        <Link to={`/studyCard/${studyCard.subject}`}>
                         <div className="flip-card">
                             <div className="flip-card-inner">
                                 <div className="flip-card-front">
@@ -36,6 +38,7 @@ const CardTest = ({ studyCards, heading, }) => {
                                 </div>
                             </div>
                         </div>
+                        </Link>
                     </div>
                 ))}
 
