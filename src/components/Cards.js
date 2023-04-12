@@ -9,11 +9,11 @@ function Cards() {
         <h1>Create new study cards</h1>
         <form>
             <label>Subject</label>
-            <input type="text" name="subject" />
+            <input type="text" name="subject" required/>
             <label>Question</label>
-            <input type="text" name="question" />
+            <input type="text" name="question" required/>
             <label>Answer</label>
-            <input type="text" name="answer" />
+            <input type="text" name="answer" required/>
         </form>
             <div className="flip-card">
                 <div className="flip-card-inner">
