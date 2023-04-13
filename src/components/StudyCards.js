@@ -1,7 +1,7 @@
 import './Cards.css';
 import { Link } from "react-router-dom"
-//**************These are props**This is function passed in as a prop*********
-const CardTest = ({ studyCards, heading, }) => {
+//**************"studyCards" are props**"heading" is a function passed in as a prop*********
+const StudyCards = ({ studyCards, heading, }) => {
 
     // this is the same thing, but written differently.
     // const CardTest = (props) => {
@@ -50,4 +50,4 @@ const CardTest = ({ studyCards, heading, }) => {
     );
 }
 
-export default CardTest;
+export default StudyCards;
