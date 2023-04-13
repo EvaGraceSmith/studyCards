@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Quattrocento+Sans&family=Tilt+Neon&display=swap');
+
+/* font-family: 'Itim', cursive;
+font-family: 'Quattrocento Sans', sans-serif;
+font-family: 'Tilt Neon', cursive; */
+
+
 /* base styles */
 * {
   margin: 0;
-  font-family: "Quicksand";
+  font-family: 'Tilt Neon', cursive;
   color: #333;
 }
 .navbar {
