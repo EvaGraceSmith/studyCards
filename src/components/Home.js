@@ -3,17 +3,17 @@ import study from '../img/study.jpg';
 
 
 const Home = () => {
-    const name= 'Shiloh'
+
 
     return (
 
-        <header className="App-header">
+        <div className="App-main">
         <img src={study} className="study" alt="logo" />
           <h1>
-            {name}'s Study Cards
+            Create your own Study Cards
           </h1>
           <Button/>
-        </header>
+        </div>
 
     );
 }

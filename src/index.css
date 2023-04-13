@@ -41,7 +41,7 @@ font-family: 'Tilt Neon', cursive; */
   padding: 20px;
 }
 
-.App-header {
+.App-main {
   background-color: #1c51bc;
   min-height: 40vh;
   display: flex;
@@ -49,6 +49,10 @@ font-family: 'Tilt Neon', cursive; */
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-main h1{
   color: white;
 }
 
