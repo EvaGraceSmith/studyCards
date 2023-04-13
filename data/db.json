@@ -125,6 +125,12 @@
       "question": "What is 1 + 1",
       "answer": "2",
       "id": 22
+    },
+    {
+      "subject": "history",
+      "question": "Who proved electricity is in lightning?",
+      "answer": "Benjamin Franklin",
+      "id": 23
     }
   ]
 }
