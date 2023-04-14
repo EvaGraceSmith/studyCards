@@ -75,7 +75,7 @@ function Cards() {
 
             </form>
             <article>
-                <h2>Card Sample:</h2>
+                <h1>Card Sample:</h1>
                 <div className="flip-card">
                     <div className="flip-card-inner">
                         <div className="flip-card-front">

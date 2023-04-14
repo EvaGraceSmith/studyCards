@@ -131,6 +131,18 @@
       "question": "Who proved electricity is in lightning?",
       "answer": "Benjamin Franklin",
       "id": 23
+    },
+    {
+      "subject": "history",
+      "question": "What was the catalyst of WWI",
+      "answer": "The assassination of  Archduke Franz Ferdinand",
+      "id": 24
+    },
+    {
+      "subject": "Math",
+      "question": "What is 4+4",
+      "answer": "8",
+      "id": 25
     }
   ]
 }

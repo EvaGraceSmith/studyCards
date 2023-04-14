@@ -51,6 +51,15 @@ font-family: 'Tilt Neon', cursive; */
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.App-main button {
+  background: #06c3e5;
+  color: #fff;
+  font-size: 1.5rem;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
 
 .App-main h1{
   color: white;
