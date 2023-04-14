@@ -8,10 +8,11 @@ const Home = () => {
     return (
 
         <div className="App-main">
-        <img src={study} className="study" alt="logo" />
-          <h1>
+                    <h1>
             Create your own Study Cards
           </h1>
+        <img src={study} className="study" alt="logo" />
+
           <Button/>
         </div>
 
