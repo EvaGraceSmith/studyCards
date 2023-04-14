@@ -65,6 +65,11 @@ font-family: 'Tilt Neon', cursive; */
   color: white;
 }
 
+.App-main img{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .study {
   height: 40vmin;
   pointer-events: none;
